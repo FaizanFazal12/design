@@ -30,8 +30,12 @@ const Navbar = () => {
         <nav className="flex flex-wrap items-center text-base justify-evenly border-gray-300 border rounded-full px-3 relative">
           {/* Product Dropdown */}
           <details className="relative">
-            <summary className="mx-2 hover:bg-pink-100 hover:rounded-lg text-sm p-1 font-semibold cursor-pointer list-none">
+            <summary className="mx-2 hover:bg-pink-100 hover:rounded-lg text-sm p-1 font-semibold cursor-pointer list-none flex items-center ">
               Product
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mx-1 size-3">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+</svg>
+
             </summary>
 
             {/* Dropdown Menu */}
