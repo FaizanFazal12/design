@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className="text-gray-600 body-font relative">
+    <header className="text-gray-600 body-font fixed w-[100%]">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row justify-around">
         {/* Logo Section */}
         <div className="flex border-gray-300 border rounded-full p-1 items-center">
