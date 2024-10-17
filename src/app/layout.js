@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import "react-multi-carousel/lib/styles.css";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

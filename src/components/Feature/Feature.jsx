@@ -3,7 +3,7 @@ import Carousel from '../Carosel/Carosel'
 
 export default function Feature() {
   return (
-    <div className='bg-slate-100'>
+    <div className='bg-slate-100 container mx-auto'>
 
      <Carousel/>
     </div>
