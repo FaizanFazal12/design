@@ -10,7 +10,7 @@ export default function Home() {
         <Banner />
 
       </div>
-      <div className=" bg-slate-100 my-[150px]">
+      <div className=" bg-slate-100 mt-[150px]">
 
         <div className=" container mx-auto  py-10 px-10">
           <div className="my-20 grid grid-cols-1 lg:grid-cols-2 gap-8">

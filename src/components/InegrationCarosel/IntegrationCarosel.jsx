@@ -3,14 +3,14 @@ import Carousel from "react-multi-carousel";
 import { useState } from "react";
 import "react-multi-carousel/lib/styles.css"; // Import Carousel CSS for styling
 
-export default function CarouselCustomNavigation() {
+export default function IntegrationCarosel() {
   const [activeIndex, setActiveIndex] = useState(0); // Track the active slide
 
 
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3, // Show 3 items fully
+      items: 7, // Show 3 items fully
       slidesToSlide: 1, // Slide one item at a time
     },
     tablet: {
@@ -28,7 +28,7 @@ export default function CarouselCustomNavigation() {
   const cards = Array.from({ length: 10 }).map((_, index) => (
     <div
       key={index}
-      className={`relative bg-white border border-slate-300  flex flex-col rounded-2xl transition-opacity duration-500 group mx-5`} 
+      className={`relative bg-white border border-slate-300  flex flex-col rounded-2xl transition-opacity duration-500 group`} 
     >
       <div
         className="bg-cover min-h-64  relative"
@@ -53,12 +53,7 @@ export default function CarouselCustomNavigation() {
         </svg>
       </div>
       </div>
-      <div className="mx-7">
-        <h2 className="text-xl font-bold text-slate-950 mb-2">Focus Mode</h2>
-        <p className="text-gray-600 text-base font-semibold mb-4">
-          Easily access doc templates to start drafting right away. Save frequently used documents as templates for quick access later.
-        </p>
-      </div>
+   
     </div>
   ));
   
@@ -68,7 +63,7 @@ export default function CarouselCustomNavigation() {
   };
 
   return (
-    <div className="w-10/12 mx-auto">
+    <div className="">
       <Carousel
         swipeable={true}
         draggable={true}
@@ -81,7 +76,7 @@ export default function CarouselCustomNavigation() {
         customTransition="transform 0.5s ease-in-out"
         transitionDuration={500}
         beforeChange={handleBeforeChange}
-        containerClass="carousel-container gap-10"
+        containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"

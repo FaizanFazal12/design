@@ -9,6 +9,12 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.custom-dot-list-style{
+  display: none !important;
+}
+.react-multi-carousel-item--active:nth-child(even){
+opacity: 50 !important;
+}
 
 /* :root {
   --background: #ffffff;
