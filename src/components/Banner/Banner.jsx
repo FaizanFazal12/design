@@ -230,7 +230,7 @@ export default function Banner() {
 
       <div className="flex flex-col items-center justify-center my-10">
         <div className="font-extrabold text-5xl text-slate-950">
-          The secret to your team's success
+          The secret to your team&apos;s success
         </div>
         <div className="text-slate-950 font-semibold text-base text-center py-2">
           ClickUp is the difference between chaotic projects and seamless

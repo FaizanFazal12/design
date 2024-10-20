@@ -10,7 +10,7 @@ const Navbar = () => {
         {/* Logo Section */}
 
         <div className="flex border-gray-300 border rounded-xl justify-around items-center p-1">
-        <Image src='https://clickup.com/assets/brand/logo-v3-clickup-light.svg' width={100} height={30}/>
+        <Image src='https://clickup.com/assets/brand/logo-v3-clickup-light.svg' width={100} height={30} alt="logo"/>
           <hr  className="h-full border mx-2 border-slate-500"/>
           <div className="text-[10px] font-medium w-24 text-start text-black  cursor-pointer text-wrap  ">
             The every thing
