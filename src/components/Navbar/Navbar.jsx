@@ -1,33 +1,25 @@
 import React from "react";
+import Image from 'next/image'
+
+// https://clickup.com/assets/brand/logo-v3-clickup-light.svg
 
 const Navbar = () => {
   return (
-    <header className="text-gray-600 body-font fixed w-[100%]">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row justify-around">
+    <header className="text-gray-600 body-font fixed w-[100%] z-10">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row justify-center">
         {/* Logo Section */}
-        <div className="flex border-gray-300 border rounded-full p-1 items-center">
-          <a className="flex title-font font-medium items-center text-gray-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-10 h-10 text-white p-1 bg-indigo-500 rounded-full"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span className="text-sm mx-1 font-bold">Tailblocks</span>
-          </a>
-          <div className="text-xs w-28 text-center text-black p-1 font-semibold cursor-pointer">
-            The every thing app will work
+
+        <div className="flex border-gray-300 border rounded-xl justify-around items-center p-1">
+        <Image src='https://clickup.com/assets/brand/logo-v3-clickup-light.svg' width={100} height={30}/>
+          <hr  className="h-full border mx-2 border-slate-500"/>
+          <div className="text-[10px] font-medium w-24 text-start text-black  cursor-pointer text-wrap  ">
+            The every thing
+           <br/> app will work
           </div>
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex flex-wrap items-center text-base justify-evenly border-gray-300 border rounded-full px-3 relative">
+        <nav className="flex flex-wrap items-center text-base justify-evenly border-gray-300 border rounded-xl px-3 relative mr-20 ml-5">
           {/* Product Dropdown */}
           <details className="relative">
             <summary className="mx-2 hover:bg-pink-100 hover:rounded-lg text-sm p-1 font-semibold cursor-pointer list-none flex items-center ">
@@ -83,13 +75,15 @@ const Navbar = () => {
         </nav>
 
         {/* Contact and Authentication Section */}
+        <div className="mx-2 flex gap-2">
+
         <nav className="flex flex-wrap items-center text-base justify-center">
-          <a className="mx-2 hover:bg-pink-100 text-sm font-semibold cursor-pointer px-3 py-3 border-gray-300 border rounded-full">
+          <a className="mx-2 text-sm font-semibold  py-2 px-3  hover:bg-pink-100  cursor-pointer  border-gray-300 border rounded-xl">
             Contact Sales
           </a>
         </nav>
 
-        <nav className="flex flex-wrap items-center justify-center text-sm font-semibold border-gray-300 border rounded-full px-3">
+        <nav className="flex flex-wrap items-center justify-center text-sm font-semibold border-gray-300 border rounded-xl ">
           <button className="inline-flex hover:bg-pink-100 items-center rounded-lg text-sm font-semibold md:mt-0 mx-2 p-2">
             Login
           </button>
@@ -101,6 +95,8 @@ const Navbar = () => {
             Signup
           </button>
         </nav>
+        </div>
+
       </div>
     </header>
   );
