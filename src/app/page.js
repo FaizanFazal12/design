@@ -1,5 +1,7 @@
+import Article from "@/components/Articles/Article";
 import Banner from "@/components/Banner/Banner";
 import Feature from "@/components/Feature/Feature";
+import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -213,6 +215,10 @@ export default function Home() {
 
 
       <Feature />
+
+      <Article/>
+
+      <Footer/>
     </>
 
   );

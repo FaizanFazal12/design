@@ -28,10 +28,10 @@ export default function CarouselCustomNavigation() {
   const cards = Array.from({ length: 10 }).map((_, index) => (
     <div
       key={index}
-      className={`relative bg-white border border-slate-300  flex flex-col rounded-2xl transition-opacity duration-500 group mx-5`} 
+      className={`relative transition-opacity duration-500 group   bg-white flex flex-col border border-slate-300 rounded-2xl mx-4 md:max-w-[350px] my-4`} 
     >
       <div
-        className="bg-cover min-h-64  relative"
+    className="bg-contain bg-no-repeat  h-[300px]  md:h-64  rounded-t-2xl relative"
         style={{
           backgroundImage:
             "url('https://images.ctfassets.net/w8fc6tgspyjz/2QpqMfhC7xuCQfR7kVn8gs/52229971b42c1f429e2359d9ceed7bc1/docs30_06-advanced.png?fm=avif&q=50')",
