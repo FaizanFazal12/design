@@ -3,14 +3,14 @@ import React from "react";
 export default function Banner() {
   return (
     <div className="mt-[150px] mb-20">
-      <div className="my-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="my-40 w-10/12 mx-auto md:flex  gap-5">
         {/* Left Section */}
-        <div className="w-full py-8">
+        <div className="w-full  py-10 md:my-0 my-10">
           <div className="hidden whitespace-nowrap rounded-lg bg-slate-100 px-2 py-0.5 text-xs font-semibold leading-6 text-slate-700 lg:block w-24">
             ClickUp Docs
           </div>
 
-          <div className="text-slate-950 font-extrabold text-5xl my-3">
+          <div className="text-slate-950 font-extrabold md:text-5xl my-3 text-3xl ">
             Your Docs & work, all in
             <br />
             <span>one place</span>
@@ -29,7 +29,7 @@ export default function Banner() {
               Get Started
             </button>
 
-            <div className="mx-2 text-slate-500 text-sm">
+            <div className="mx-2 text-slate-500 text-base font-medium ">
               Free forever.
               <br />
               No credit card.
@@ -42,7 +42,7 @@ export default function Banner() {
               className="w-20"
               alt="Stars"
             />
-            <span className="text-slate-500 text-xs">25,000+ reviews from</span>
+            <span className="text-slate-500 text-base font-medium">25,000+ reviews from</span>
 
             <svg
               width="89"
@@ -67,9 +67,9 @@ export default function Banner() {
         </div>
 
         {/* Right Section */}
-        <div className="w-full">
+        <div className="w-full ">
           <video
-            className="w-10/12 mx-5 rounded-lg shadow-lg"
+            className="w-full  mx-5 border border-slate-200 rounded-lg shadow-lg"
             autoPlay
             muted
             loop
@@ -229,7 +229,7 @@ export default function Banner() {
       </div>
 
       <div className="flex flex-col items-center justify-center my-10">
-        <div className="font-extrabold text-5xl text-slate-950">
+        <div className="font-extrabold text-3xl md:text-5xl text-slate-950">
           The secret to your team&apos;s success
         </div>
         <div className="text-slate-950 font-semibold text-base text-center py-2">

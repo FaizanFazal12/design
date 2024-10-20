@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import React from 'react'
-
 export default function Article() {
   const cards = Array.from({ length: 3 }).map((_, index) => (
     <div
@@ -46,91 +46,109 @@ export default function Article() {
         {cards}
       </div>
       <div className="border border-slate-200">
-  <div className="container mx-auto my-10 lg:flex ">
+  <div className="container mx-auto my-5 lg:flex justify-center gap-10 ">
     {/* <!-- Heading that takes 100% width on small screens --> */}
-    <div className="text-base font-semibold w-full text-center mb-4 lg:mb-0 lg:w-3/12 lg:text-left">
+    <div className=" flex gap-2 items-center text-base font-semibold w-full text-center mb-4 lg:mb-0 lg:w-2/12 lg:text-left">
+    <Image src="https://clickup.com/assets/brand/logo-v3-clickup-symbol-only.svg" width={20} height={10} />
       The everything app for work.
     </div>
 
-    {/* <!-- Flex Container for Icons and Labels --> */}
-    <div className="flex md:flex-row flex-col lg:gap-10 gap-10 lg:w-9/12">
-      <div className="flex items-center gap-2 lg:w-3/12 mb-4 lg:mb-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 11c0-3.866-3.582-7-8-7m16 0c-4.418 0-8 3.134-8 7m8 0c0 3.866-3.582 7-8 7m-8 0c4.418 0 8-3.134 8-7"
-          />
-        </svg>
-        <span className="text-base font-medium">24/7 support</span>
-      </div>
+  {/* Vertical Divider */}
+  <div className="hidden lg:block w-1 h-auto bg-gray-200" />
+    {/* <!-- Flex Container for Icons and Labels --> */}.
+    
+    <div className="flex md:flex-row flex-col lg:gap-10 lg:w-9/12">
+  {/* Item 1 */}
+  <div className="flex items-center gap-2 lg:w-2/12 mb-4 lg:mb-0">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 11c0-3.866-3.582-7-8-7m16 0c-4.418 0-8 3.134-8 7m8 0c0 3.866-3.582 7-8 7m-8 0c4.418 0 8-3.134 8-7"
+      />
+    </svg>
+    <span className="text-base font-medium">24/7 support</span>
+  </div>
 
-      <div className="flex items-center gap-2 lg:w-3/12 mb-4 lg:mb-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 8.25V12l3 1.5"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M6.75 3h10.5a2.25 2.25 0 012.25 2.25v13.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 18.75V5.25A2.25 2.25 0 016.75 3z"
-          />
-        </svg>
-        <span className="text-base font-medium">Weekly updates</span>
-      </div>
+  {/* Vertical Divider */}
+  <div className="hidden lg:block w-1 h-auto bg-gray-200" />
 
-      <div className="flex items-center gap-2 lg:w-3/12 mb-4 lg:mb-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 4.5l7.5 13.5H4.5L12 4.5z"
-          />
-        </svg>
-        <span className="text-base font-medium">Secure and compliant</span>
-      </div>
+  {/* Item 2 */}
+  <div className="flex items-center gap-2 lg:w-2/12 mb-4 lg:mb-0">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 8.25V12l3 1.5"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M6.75 3h10.5a2.25 2.25 0 012.25 2.25v13.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 18.75V5.25A2.25 2.25 0 016.75 3z"
+      />
+    </svg>
+    <span className="text-base font-medium">Weekly updates</span>
+  </div>
 
-      <div className="flex items-center gap-2 lg:w-3/12 mb-4 lg:mb-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 3v3.75h3.75M3 21l7.5-7.5m6.75 0V3h3.75v3.75H21M16.5 21l7.5-7.5M12 3v18"
-          />
-        </svg>
-        <span className="text-base font-medium">99.9% uptime</span>
-      </div>
-    </div>
+  {/* Vertical Divider */}
+  <div className="hidden lg:block w-1 h-auto bg-gray-200" />
+
+  {/* Item 3 */}
+  <div className="flex items-center gap-2 lg:w-2/12 mb-4 lg:mb-0">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 4.5l7.5 13.5H4.5L12 4.5z"
+      />
+    </svg>
+    <span className="text-base font-medium">Secure and compliant</span>
+  </div>
+
+  {/* Vertical Divider */}
+  <div className="hidden lg:block w-1 h-auto bg-gray-200" />
+
+  {/* Item 4 */}
+  <div className="flex items-center gap-2 lg:w-2/12 mb-4 lg:mb-0">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 3v3.75h3.75M3 21l7.5-7.5m6.75 0V3h3.75v3.75H21M16.5 21l7.5-7.5M12 3v18"
+      />
+    </svg>
+    <span className="text-base font-medium">99.9% uptime</span>
+  </div>
+</div>
+
   </div>
 </div>
 

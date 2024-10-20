@@ -32,7 +32,7 @@ export default function Feature() {
         <div className="hidden whitespace-nowrap bg-slate-100 rounded-xl text-base text-center font-semibold leading-8 mx-auto my-5  text-slate-700 lg:block w-fit px-2">
           Organize
         </div>
-        <div className="text-slate-950 font-extrabold text-4xl my-5 text-center">
+        <div className="text-slate-950 text-3xl font-extrabold md:text-4xl my-5 text-center">
           Get more done with time-saving
           <br />
           <span>features</span>
@@ -53,7 +53,7 @@ export default function Feature() {
           <div className="hidden whitespace-nowrap bg-slate-100 rounded-xl text-base text-center font-semibold leading-8 mx-auto my-5  text-slate-700 lg:block w-fit px-3">
             Rich Formatting
           </div>
-          <div className="text-slate-950 font-extrabold text-4xl my-5 text-center">
+          <div className="text-slate-950 text-3xl font-extrabold md:text-4xl my-5 text-center">
             Add style & functionality with
             <br />
             <span>/Slash commands</span>
